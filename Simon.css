@@ -1,46 +1,124 @@
 body {
-    /* text-align: center; */
-    background-color: #C3E0E5;
-  }
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
 
-  li{
-    font-size:400 ;
-    font-weight: 10px;
-  }
-  
-  .btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 5px solid black;
-    margin: 2.5rem;
-  }
-  
-  .btn-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .yellow {
-    background-color: #f99b45;
-  }
-  
-  .red {
-    background-color: #773f50;
-  }
-  
-  .purple {
-    background-color: #233877;
-  }
-  
-  .green {
-    background-color: #2f6676;
-  }
-  
-  .flash {
-    background-color: white;
-  }
-  
-  .userflash {
-    background-color: rgb(1, 31, 1);
-  }
+html{
+  scroll-behavior: smooth;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 18% auto;
+}
+
+.hero-content h1{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.hero-content p{
+  margin-top: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #6c63ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #5548d8;
+}
+
+.btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: none;
+  margin: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.yellow {
+  background-color: #ffc107;
+}
+
+.red {
+  background-color: #e53935;
+}
+
+.purple {
+  background-color: #673ab7;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.flash {
+  background-color: #fff;
+  color: #333;
+}
+
+.userflash {
+  background-color: #333;
+  color: #fff;
+}
+
+.game-playground{
+  margin-top: 8rem;
+}
